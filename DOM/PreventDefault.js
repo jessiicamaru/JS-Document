@@ -15,15 +15,14 @@
 var aElement = document.links; // tương đương câu lệnh document.querySelector('a');
 
 for (var i = 0; i < aElement.length; i++) {
-    aElement[i].onclick = function(event) {    
-        if (!event.target.href.startsWith('https://f8.edu.vn')){
-            event.preventDefault();
-        }
+  aElement[i].onclick = function (event) {
+    if (!event.target.href.startsWith("https://f8.edu.vn")) {
+      event.preventDefault();
     }
+  };
 }
 
 //event.target.href.startsWith('https://f8.edu.vn') dùng để kiểm tra xem href có chứa url được truyền vào hay không, nếu không phải thì event.preventDefault() sẽ xóa bỏ đi hành vi mặc định chuyển trang của thẻ a
-
 
 //-------------------------------------------------------------------------------------------------------------
 
@@ -47,15 +46,15 @@ for (var i = 0; i < aElement.length; i++) {
     </ul>
  */
 
-var ulElement = document.querySelector('ul');
+var ulElement = document.querySelector("ul");
 
-ulElement.onmousedown = function(event) {
-    event.preventDefault();
-}
+ulElement.onmousedown = function (event) {
+  event.preventDefault();
+};
 
-ulElement.onclick = function(event) {
-    console.log(event.target)
-}
+ulElement.onclick = function (event) {
+  console.log(event.target);
+};
 
 /** GIẢI THÍCH
  * - Ở phần này khi click ra khỏi thẻ input thì ul trở về display none, vậy tức là ta phải ngăn chặn hành vi của trình duyệt ngay từ lúc cú click chưa được nhấc lên, nên ta sử dụng thuộc tính onmousedown (vào lúc chuột nhấn xuống).
