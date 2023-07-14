@@ -5,7 +5,7 @@ var names = ['John', 'Nick', 'Maxwell'];
 var string = '22 jump street';
 
 console.log(names.includes('Nick')); //true
-console.log(names.includes('Nick',2)); //false (tìm từ vị trí 2)
+console.log(names.includes('Nick', 2)); //false (tìm từ vị trí 2)
 
-console.log(string.includes('22')) //true
-console.log(string.includes('22',1)) //false (tìm từ vị trí 1)
+console.log(string.includes('22')); //true
+console.log(string.includes('22', 1)); //false (tìm từ vị trí 1)

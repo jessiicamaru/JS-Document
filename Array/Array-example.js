@@ -4,16 +4,16 @@ var languages = ['Javascript', 'PHP', 'Ruby'];
 console.log(languages.toString()); //Javascript,PHP,Ruby
 
 // .join chuyển 1 mảng sang 1 chuỗi, nhưng định dạng được khoảng cách giữa các elements
-console.log(languages.join('-+')) //Javascript-+PHP-+Ruby
+console.log(languages.join('-+')); //Javascript-+PHP-+Ruby
 
-/** 
+/**
  * .pop và .push: thực hiện ở CUỐI MẢNG
  * .shift và .unshift: thực hiện ở ĐẦU MẢNG
  * .push và .unshift: THÊM vào mảng và trả về ĐỘ DÀI của mảng mới
- * .pop và .shift: XÓA mảng và trả về GIÁ TRỊ vừa được xóa 
- * 
+ * .pop và .shift: XÓA mảng và trả về GIÁ TRỊ vừa được xóa
+ *
  * Khi xóa hết tất cả các phần tử nhưng vẫn thực hiện xóa sẽ trả về undefined
-*/
+ */
 
 // .pop XÓA 1 element (cuối mảng)
 console.log(languages.pop()); //Ruby và mảng mới là ['Javascript', 'PHP']
@@ -25,15 +25,15 @@ console.log(languages.push('Dart', 'C++')); //4 bởi vì ở dòng 18 độ dà
 console.log(languages.shift()); //Javascript và mảng mới là ['PHP', 'Dart', 'C++']
 
 // .unshift THÊM 1 element (đầu mảng)
-console.log(languages.unshift('Pascal', 'C#')) //5 và mảng mới là ['Pascal', 'C#', 'PHP', 'Dart', 'C++']
+console.log(languages.unshift('Pascal', 'C#')); //5 và mảng mới là ['Pascal', 'C#', 'PHP', 'Dart', 'C++']
 
-/** 
+/**
  * .splice có thể xóa, chèn, cắt
  * language.splice(start, quantity, value1, value2,...);
  * start: Vị trí con trỏ bắt đầu
  * quantity: Số lượng phần tử bị xóa khỏi mảng tính từ start
  * value1 trở về sau: Các giá trị được truyền vào mảng tính từ start
- */ 
+ */
 
 //Xóa
 var languages = ['Javascript', 'PHP', 'Ruby'];
@@ -58,10 +58,7 @@ console.log(languages2.concat(languages)); //phân tử mảng languages2 đứn
 
 // .slice cắt mảng
 var languages = ['Javascript', 'PHP', 'Ruby'];
-console.log(languages.slice(1,2)) //['PHP'] cắt từ vị trí 1 đên vị trí 2
-console.log(languages.slice(0)) //phương thức copy mảng
-console.log(languages.slice(1)) //['PHP', 'Ruby'] cắt từ vị trí 1 tới hết
-console.log(languages.slice(-3,-2)) //['Javascript'] cắt từ vị trí -3 đên vị trí -2
-
-
-
+console.log(languages.slice(1, 2)); //['PHP'] cắt từ vị trí 1 đên vị trí 2
+console.log(languages.slice(0)); //phương thức copy mảng
+console.log(languages.slice(1)); //['PHP', 'Ruby'] cắt từ vị trí 1 tới hết
+console.log(languages.slice(-3, -2)); //['Javascript'] cắt từ vị trí -3 đên vị trí -2

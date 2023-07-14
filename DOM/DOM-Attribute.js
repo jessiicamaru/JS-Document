@@ -3,8 +3,7 @@ var headingElement = document.querySelector('a');
 //Thêm các attribute có sẵn và hợp lệ với thẻ
 headingElement.href = 'fb.com'; //thêm attribute href cho thẻ a
 headingElement.className = 'heading'; //thêm attribute class cho thẻ a
-headingElement.id = 'heading;' //thêm attribute id cho thẻ a
-
+headingElement.id = 'heading;'; //thêm attribute id cho thẻ a
 
 var headingButton = document.querySelector('h1');
 //Thêm attribute tự đặt ra cho 1 thẻ

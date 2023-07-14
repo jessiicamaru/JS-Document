@@ -18,12 +18,12 @@ var headingElement = document.querySelector('.heading');
 //innerText in ra những gì thấy ở trên trình duyệt
 //textContent in ra những gì có trong element, kể cả dấu cách, xuống dòng, kể cả bị ẩn đi, ngoại trừ thẻ tag
 console.log(headingElement.innerText); //Heading Text
-console.log(headingElement.textContent); 
-//  
+console.log(headingElement.textContent);
+//
 //      Heading
 //      Text
 //
-//      
+//
 //      Hi
 //
 //

@@ -1,10 +1,10 @@
 var students = [
-    { name: 'John',born: 2005 },
-    { name: 'Jack',born: 2002 },
-    { name: 'Nick',born: 1997 },
-    { name: 'Max',born: 2005 },
-    { name: 'John',born: 2004 }
-]
+    { name: 'John', born: 2005 },
+    { name: 'Jack', born: 2002 },
+    { name: 'Nick', born: 1997 },
+    { name: 'Max', born: 2005 },
+    { name: 'John', born: 2004 },
+];
 //Các thuộc tính dưới đây được truyền vào tham số là một function(value, index)
 //các thuộc tính luôn trả về 2 giá trị là value(các phần tử), index(thứ tự phần tử)
 
@@ -25,7 +25,7 @@ var is2002 = students.some(function (student, index) {
 });
 console.log(isYoung); //True
 
-//find() tìm ra 1 phần tử đầu tiên thỏa mãn một điều kiện 
+//find() tìm ra 1 phần tử đầu tiên thỏa mãn một điều kiện
 var findJohn = students.find(function (student, index) {
     return student.name === 'John';
 });

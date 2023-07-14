@@ -11,7 +11,7 @@
 
 var inputElement = document.querySelector('input[type="checkbox"]');
 
-inputElement.onchange = function(event) {
-    console.log(event.target.checked); 
-}
+inputElement.onchange = function (event) {
+    console.log(event.target.checked);
+};
 //Trả về true khi người dùng đã tick vào check box, false là ngược lại
