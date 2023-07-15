@@ -6,7 +6,7 @@ console.log(myString.length); //23
 // .indexOf và .lastIndexOf (tìm vị trí của chuỗi trong chuỗi)
 console.log(myString.indexOf('world')); //0 (vị trí đầu tiên)
 console.log(myString.lastIndexOf('world')); //18 (vị trí cuối cùng)
-console.log(myString.indexOf('ABC')) //-1 (không tìm thấy)
+console.log(myString.indexOf('ABC')); //-1 (không tìm thấy)
 console.log(myString.indexOf('world', 10)); //12 (vị trí đầu tiên kể từ vị trí 10)
 
 // .search (tìm vị trí của chuỗi trong chuỗi)
@@ -26,7 +26,7 @@ console.log(myString.slice(0)); //cắt hết
 // .replace (thay thế)
 console.log(myString.replace('world', 'John')); //'John Hello world world' thay thế từ world đầu tiên
 console.log(myString.replace(/world/g, 'John')); //'John Hello John John' thay thế tất cả từ world
-/** /world/g được gọi là một biểu thức chính quy */ 
+/** /world/g được gọi là một biểu thức chính quy */
 
 // .toLowerCase và .toUpperCase (in thường và in hoa)
 console.log(myString.toUpperCase()); //WORLD HELLO WORLD WORLD
@@ -45,7 +45,3 @@ console.log(myString.charAt(6)); // 'H' lấy phần tử thứ 6 có typeof là
 console.log(myString.charAt(500)); // '' lấy phần tử thứ 500 có typeof là string
 console.log(myString[6]); // 'H' lấy phần tử thứ 6 có typeof là object
 console.log(myString[500]); // undefined lấy phần tử thứ 500 có typeof là undefined
-
-
-
-
