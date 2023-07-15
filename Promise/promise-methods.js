@@ -15,8 +15,6 @@ promise
         console.log('err: ', err);
     });
 
-
-    
 // Promise.all dùng để chạy 2 promise cùng 1 lúc, 2 promise không liên quan tới nhau
 var promise1 = new Promise(function (resolve, reject) {
     setTimeout(function () {
@@ -37,8 +35,7 @@ var promise2 = new Promise(function (resolve, reject) {
 Promise.all([promise1, promise2])
     .then(function (result) {
         // console.log('result: ', result); // [1, [2,3]]
-        var newArray = result.reduce(
-            function (accumulator, value, index, originArray) {
+        var newArray = result.reduce(function (accumulator, value, index, originArray) {
             return accumulator.concat(value);
         });
         console.log('newArray: ', newArray);
