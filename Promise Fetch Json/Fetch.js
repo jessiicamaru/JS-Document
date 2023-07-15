@@ -11,4 +11,7 @@ fetch(postAPI)
     })
     .then(function (posts) {
         console.log(posts);
+    })
+    .catch(function (err) {
+        console.log(err);
     });
