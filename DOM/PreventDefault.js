@@ -16,11 +16,7 @@ var aElement = document.links; // tương đương câu lệnh document.querySel
 
 for (var i = 0; i < aElement.length; i++) {
     aElement[i].onclick = function (event) {
-        if (
-            !event.target.href.startsWith(
-                'https://f8.edu.vn',
-            )
-        ) {
+        if (!event.target.href.startsWith('https://f8.edu.vn')) {
             event.preventDefault();
         }
     };
