@@ -19,25 +19,17 @@ Array.prototype.map2 = function (callbackfunciton) {
     var outputArray = [];
 
     for (var i = 0; i < arrayLength; i++) {
-        outputArray.push(
-            callbackfunciton(this[i], i, this),
-        );
+        outputArray.push(callbackfunciton(this[i], i, this));
     }
     return outputArray;
 };
 
-var newStudents = students.map2(function (
-    value,
-    index,
-    originArray,
-) {
+var newStudents = students.map2(function (value, index, originArray) {
     return {
         name: value.name + ' Doherty',
         born: value.born,
         order: index,
-        getName: `hi, have a nice day ${
-            value.name + ' Doherty'
-        }`,
+        getName: `hi, have a nice day ${value.name + ' Doherty'}`,
     };
 });
 
